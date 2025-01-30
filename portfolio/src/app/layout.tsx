@@ -1,15 +1,29 @@
-import { ReactNode } from "react";
-import "@/app/globals.css";
-import Header from "@/components/layout/Header";
-// import Footer from "@/components/layout/Footer";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/main/Navbar";
+import Footer from "@/components/main/Footer";
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Space Portfolio",
+  description: "This is my portfolio",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="fr">
-      <body className="bg-gray-50 text-gray-900">
-        <Header />
-        <main className="container mx-auto p-6">{children}</main>
-        {/* <Footer /> */}
+    <html lang="en">
+      <body
+        className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
+      >
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

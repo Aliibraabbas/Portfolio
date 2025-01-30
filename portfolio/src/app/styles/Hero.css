@@ -1,0 +1,27 @@
+
+.hero-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Vidéo en arrière-plan */
+  .hero-video {
+    position: absolute;
+    top: -340px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(180deg); 
+    z-index: 1;
+  }
+  
+  /* Contenu du Hero */
+  .hero-content {
+    position: relative;
+    z-index: 2; 
+  }
+  

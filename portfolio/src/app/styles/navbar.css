@@ -1,0 +1,96 @@
+/* Conteneur principal de la navbar */
+.navbar-container {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(3, 0, 20, 0.09);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+  box-shadow: 0 4px 10px rgba(42, 14, 97, 0.5);
+  padding: 0 20px;
+}
+
+/* Contenu interne de la navbar */
+.navbar-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Section du logo */
+.navbar-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-logo-img {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.navbar-logo-img:hover {
+  transform: rotate(360deg); /* Animation de rotation au survol */
+}
+
+.navbar-logo-text {
+  font-weight: bold;
+  margin-left: 10px;
+  color: #d1d5db;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-logo-text {
+    display: block;
+  }
+}
+
+/* Section des liens de navigation */
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-links-container {
+  display: flex;
+  gap: 15px;
+  background-color: rgba(3, 0, 20, 0.36);
+  border: 1px solid rgba(112, 66, 248, 0.38);
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.navbar-link {
+  color: #d1d5db;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  color: #a78bfa; /* Change the color on hover */
+}
+
+/* Section des icônes sociales */
+.navbar-socials {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-social-icon {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.navbar-social-icon:hover {
+  transform: scale(1.2); /* Zoom de l'icône au survol */
+}

@@ -1,0 +1,89 @@
+/* Conteneur principal */
+.hero-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    width: 100%;
+    z-index: 20;
+  }
+  
+  /* Contenu texte */
+  .hero-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin: auto;
+    text-align: start;
+  }
+  
+  /* Box de bienvenue */
+  .welcome-box {
+    padding: 8px 7px;
+    border: 1px solid rgba(112, 66, 248, 0.55);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sparkles-icon {
+    color: #b49bff;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .welcome-text {
+    font-size: 13px;
+    color: white;
+  }
+  
+  /* Texte principal */
+  .hero-main-text {
+    font-size: 3.75rem; /* Correspond à 60px */
+    font-weight: bold;
+    color: white;
+    margin-top: 24px;
+    max-width: 600px;
+    width: auto;
+    height: auto;
+  }
+  
+  .highlight-text {
+    background: linear-gradient(90deg, #6a0dad, #00bcd4);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Description */
+  .hero-description {
+    font-size: 1.125rem; /* Correspond à 18px */
+    color: #a1a1aa; /* gray-400 */
+    margin: 20px 0;
+    max-width: 600px;
+  }
+  
+  /* Bouton "Learn More" */
+  .learn-more-btn {
+    padding: 10px 20px;
+    background-color: #6a0dad; /* Purple */
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    max-width: 200px;
+  }
+  
+  /* Conteneur de l'image */
+  .hero-image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

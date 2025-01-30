@@ -1,0 +1,36 @@
+[
+    {
+      "id": "1",
+      "title": "Projet 1",
+      "description": "Description du projet 1",
+      "category": "Web",
+      "technologies": "React, Node.js",
+      "imageUrl": "/images/project1.jpg",
+      "context": "Contexte du projet...",
+      "objectives": "Objectifs du projet...",
+      "results": "Résultats obtenus...",
+      "testimonials": [
+        {
+          "name": "Client A",
+          "text": "Un super projet !"
+        },
+        {
+          "name": "Client B",
+          "text": "Très satisfait du résultat."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Projet 2",
+      "description": "Description du projet 2",
+      "category": "Mobile",
+      "technologies": "Flutter, Firebase",
+      "imageUrl": "/images/project2.jpg",
+      "context": "Contexte du projet 2...",
+      "objectives": "Objectifs du projet 2...",
+      "results": "Résultats obtenus...",
+      "testimonials": []
+    }
+  ]
+  
